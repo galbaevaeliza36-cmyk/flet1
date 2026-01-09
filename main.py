@@ -13,7 +13,7 @@ def main (page:ft.Page):
     
 
     # text_button=ft.TextButton("SEND")
-    elevated_button=ft.ElevatedButton("send" on_click=text_name)
+    elevated_button=ft.ElevatedButton("send", on_click=text_name)
     # icon_button=ft.IconButton(icon=ft.Icons.SEND)
 
     name_input = ft.TextField(label="Введите что нибудь")  #label-подсказка в поле ввода
