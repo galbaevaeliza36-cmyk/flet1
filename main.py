@@ -11,6 +11,9 @@ def main (page:ft.Page):
     text_hello.value = "Hello"
     # text_hello.color=ft.Colors.GREEN_900
 
+    greeting_history=[]
+    history_text = ft.Text("История привествий:")
+
     def text_name(e):
         print(name_input.value)
         tz = timezone(timedelta(hours=6))
@@ -19,11 +22,21 @@ def main (page:ft.Page):
 
         text_hello.value=f"{now.strftime("%Y-%m-%d %H:%M:%S")} hello {name_input.value}"
         name_input.value=None
+
+        greeting_history.append(name)
+        print(greeting_history)
+        history_text.value = "История привествий :\n" +",\n".join(greeting_history)
+        ""
     def change_theme(e):
         if page.theme_mode==ft.ThemeMode.DARK:
            page.theme_mode=ft.ThemeMode.LIGHT
         else:
             page.theme_mode=ft.ThemeMode.DARK
+
+    def clear_history(_):
+        print(greeting_history)
+        greeting
+
         
 
     # text_button=ft.TextButton("SEND")
