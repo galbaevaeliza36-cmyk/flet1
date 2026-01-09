@@ -37,10 +37,7 @@ def main (page:ft.Page):
         print(greeting_history)
         greeting
 
-        
-
-
-        
+    
 
     # text_button=ft.TextButton("SEND")
     elevated_button=ft.ElevatedButton("send", on_click=text_name)
