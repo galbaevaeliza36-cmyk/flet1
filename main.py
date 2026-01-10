@@ -9,8 +9,6 @@ def main (page:ft.Page):
     text_hello=ft.Text(value="Hello world")
     page.theme_mode = ft.ThemeMode.DARK
     text_hello.value = "Hello"
-    # text_hello.color=ft.Colors.GREEN_900
-
     greeting_history=[]
     history_text = ft.Text("История привествий:")
 
